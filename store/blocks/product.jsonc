@@ -1,8 +1,10 @@
 {
+  //pagina de produto, baseado nos tutoriais feito em aula
   "store.product": {
     "children": [
       "breadcrumb",
-      "flex-layout.row#main"
+      "flex-layout.row#main",
+      "flex-layout.row#desc"
     ]
   },
   "flex-layout.row#main": {
@@ -21,6 +23,7 @@
   },
   "flex-layout.col#right": {
     "props": {
+      "marginLeft":6,
       "preventVerticalStretch": true,
       "verticalAlign": "middle"
     },
@@ -43,6 +46,14 @@
     "children": [
       "sku-selector",
       "product-quantity"
+    ]
+  },"flex-layout.row#desc":{
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 3
+    },
+    "children": [
+      "product-description"
     ]
   }
 }

@@ -233,11 +233,11 @@
       "danger--faded": "#2D2D2D",
       "warning": "#DCDCDC",
       "warning--faded": "#1a1a1a",
-      "muted-1": "#DCDCDC",
-      "muted-2": "#DCDCDC",
-      "muted-3": "#2D2D2D",
-      "muted-4": "#2D2D2D",
-      "muted-5": "#2D2D2D"
+      "muted-1": "#727273",
+      "muted-2": "#979899",
+      "muted-3": "#cacbcc",
+      "muted-4": "#e3e4e6",
+      "muted-5": "#f2f4f5"
     },
     "hover-on": {
       "action-primary": "#DCDCDC",
