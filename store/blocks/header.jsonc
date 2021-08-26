@@ -1,0 +1,148 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop"
+    ]
+  },
+  "header-row#1-desktop": {
+    "children": [
+      "header-border",
+      "search-bar",
+      "header-spacer",
+      "vtex.menu@2.x:menu#header",
+      "logo#desktop"
+    ],
+    "props": {
+      "fullWidth": true,
+      "inverted": true,
+      "blockClass":"header-desktop"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/Logo-Corebiz.png",
+      "width": "180"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile"
+    ]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "drawer",
+      "search-bar",
+      "header-spacer",
+      "logo#mobile"
+    ],
+    "props": {
+      "fullWidth": true,
+      "inverted": true,
+      "blockClass":"header-mobile"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/Logo-Corebiz-Reduced.png",
+      "width": "50"
+    }
+  },
+  "vtex.menu@2.x:menu#header": {
+    "props": {
+      "blockClass":"menu-desktop"
+    },
+    "children": [
+      "menu-item#shop",
+      "menu-item#about-us",
+      "menu-item#register",
+      "menu-item#leads"
+    ]
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#shop",
+      "menu-item#about-us",
+      "menu-item#register",
+      "menu-item#leads"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#shop": {
+    "props":{
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    }
+  },
+  "menu-item#about-us": {
+    "props":{
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "about-us",
+        "text": "About Us"
+      }
+    }
+  },
+  "menu-item#register": {
+    "props":{
+      "id": "menu-item-register",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Register",
+        "text": "Register"
+      }
+    }
+  },
+  "menu-item#leads": {
+    "props":{
+      "id": "menu-item-leads",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Leads",
+        "text": "Leads"
+      }
+    }
+  }
+}

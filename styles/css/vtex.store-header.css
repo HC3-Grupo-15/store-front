@@ -1,0 +1,9 @@
+.headerRowContainer--header-desktop{
+    height: 100px;
+    align-items: flex-end;
+}
+
+.headerRowContainer--header-mobile{
+    height: 70px;
+    align-items: flex-end;
+}

@@ -1,0 +1,23 @@
+{
+    "store.custom#about-us": {
+        "blocks": ["flex-layout.row#about-us"]
+    },
+    "flex-layout.row#about-us": {
+        "children": [
+            "info-card#about-us"
+        ]
+    },
+    "info-card#about-us": {
+        "props": {
+          "id": "info-card-example",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://www.corebiz.ag/wp-content/uploads/2021/02/Banner-Mapa-Corebiz-EN.png",
+          "headline": "a corebiz",
+          "callToActionText": "DISCOVER",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-example",
+          "textAlignment": "center"
+        }
+      }
+}
