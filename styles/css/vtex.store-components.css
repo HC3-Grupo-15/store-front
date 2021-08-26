@@ -1,0 +1,30 @@
+.logoImage{
+    padding-bottom: 10px;
+}
+
+.buyButtonText{
+    color: white;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #DCDCDC;
+    width: 20rem;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+    color: #DCDCDC;
+    background-color: #000000;
+}
+
+.searchBarIcon{
+    color: #DCDCDC;
+    border-radius: 0px;
+}
+
+.searchBarContainer :global(.vtex-input__suffix){
+    border: none;
+    border-radius: 0px;
+    background-color: #000000;
+}
