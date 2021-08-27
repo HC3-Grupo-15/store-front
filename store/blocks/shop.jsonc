@@ -1,0 +1,37 @@
+{
+    "store.custom#shop": {
+        "blocks": ["search-result-layout.customQuery#shop"]
+    },
+    "search-result-layout.customQuery#shop": {
+        "props": {
+          "querySchema": {
+            "skusFilter": "FIRST_AVAILABLE",
+            "simulationBehavior": "skip"
+          }
+        },
+        "blocks": [
+            "search-result-layout.desktop#shop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#shop": {
+        "children": [
+            "rich-text#shop",
+            "search-content"
+        ],
+        "props":{
+          "pagination": "showMore"
+        }
+    },
+    "rich-text#shop": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Nossos produtos",
+          "textColor": "c-on-emphasis",
+          "font": "t-heading-1",
+          "blockClass": "mission"
+        }
+    }
+}

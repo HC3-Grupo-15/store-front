@@ -28,7 +28,7 @@
       "verticalAlign": "middle"
     },
     "children": [
-      "product-name",
+      "vtex.store-components:product-name",
       "product-identifier.product",
       "product-price",
       "flex-layout.row#qty-sku",

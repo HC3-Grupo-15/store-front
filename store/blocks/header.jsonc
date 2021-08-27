@@ -16,7 +16,8 @@
       "search-bar",
       "header-spacer",
       "vtex.menu@2.x:menu#header",
-      "logo#desktop"
+      "logo#desktop",
+      "minicart.v2"
     ],
     "props": {
       "fullWidth": true,
@@ -42,7 +43,8 @@
       "drawer",
       "search-bar",
       "header-spacer",
-      "logo#mobile"
+      "logo#mobile",
+      "minicart.v2"
     ],
     "props": {
       "fullWidth": true,
@@ -93,7 +95,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/shop",
         "noFollow": false,
         "tagTitle": "Shop",
         "text": "Shop"

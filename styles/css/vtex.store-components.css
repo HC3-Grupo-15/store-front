@@ -1,5 +1,11 @@
 .logoImage{
     padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.logoContainer{
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .buyButtonText{
@@ -10,7 +16,7 @@
     border: none;
     border-radius: 0px;
     border-bottom: 2px solid #DCDCDC;
-    width: 20rem;
+    width: 15rem;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input){
@@ -28,3 +34,4 @@
     border-radius: 0px;
     background-color: #000000;
 }
+
