@@ -14,13 +14,17 @@
     "children": [
       "header-border",
       "search-bar",
-      "header-spacer",
+      //"header-spacer",
       "vtex.menu@2.x:menu#header",
       "logo#desktop",
+      "header-spacer",
       "minicart.v2"
+      
     ],
     "props": {
       "fullWidth": true,
+
+      
       "inverted": true,
       "blockClass":"header-desktop"
     }
@@ -146,5 +150,10 @@
         "text": "Leads"
       }
     }
+  },
+  "search-bar":{
+    "props":{
+      "width":50
+  }
   }
 }
