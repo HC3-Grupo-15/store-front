@@ -1,7 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "rich-text",
+      "lead-form"
     ]
   },
   "rich-text": { 
