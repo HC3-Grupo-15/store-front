@@ -1,3 +1,8 @@
 .buyButtonText{
     color: white;
 }
+
+.imageNormal{
+    width: auto;
+    height:15rem;
+}
