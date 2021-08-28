@@ -35,3 +35,6 @@
     background-color: #000000;
 }
 
+.autoCompleteOuterContainer{
+    width:min-content;
+}
