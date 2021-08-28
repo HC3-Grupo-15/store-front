@@ -1,37 +1,72 @@
 {
-    "store.custom#shop": {
-        "blocks": ["search-result-layout.customQuery#shop"]
+  "store.custom#shop": {
+    "blocks": ["search-result-layout.customQuery#shop"]
+  },
+  "search-result-layout.customQuery#shop": {
+    "props": {
+      "querySchema": {
+      "skusFilter": "ALL",
+      "simulationBehavior": "skip"
+      }
     },
-    "search-result-layout.customQuery#shop": {
-        "props": {
-          "querySchema": {
-            "skusFilter": "FIRST_AVAILABLE",
-            "simulationBehavior": "skip"
-          }
-        },
-        "blocks": [
-            "search-result-layout.desktop#shop",
-            "search-result-layout.mobile",
-            "search-not-found-layout"
-        ]
-    },
-    "search-result-layout.desktop#shop": {
-        "children": [
-            "rich-text#shop",
-            "search-content"
-        ],
-        "props":{
-          "pagination": "showMore"
-        }
-    },
-    "rich-text#shop": {
-        "props": {
-          "textAlignment": "CENTER",
-          "textPosition": "CENTER",
-          "text": "Nossos produtos",
-          "textColor": "c-on-emphasis",
-          "font": "t-heading-1",
-          "blockClass": "mission"
-        }
+    "blocks": [
+      "search-result-layout.desktop#shop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+     ]
+  },
+  "search-result-layout.desktop#shop": {
+    "children": [
+      "rich-text#shop",
+      "search-title.v2",
+      "search-content#shop"
+    ],
+    "props":{
+     "pagination": "showMore"
     }
+  },
+  "rich-text#shop": {
+    "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "Nossos produtos",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-1",
+    "blockClass": "mission"
+    }
+  },
+  "search-content#shop":{
+    "blocks":[
+    "gallery#shop","not-found"
+    ]
+  },
+
+  "gallery#shop":{
+   "props":{
+   "layouts":[
+    {
+      "name":"grid",
+      "component":"GridSummary",
+      "itemsPerRow":{
+        "(min-width:13000)":4,
+        "desktop":3,
+        "tablet":3,
+        "phone":2
+      }
+    },
+    {
+      "name":"list",
+      "component":"ListSummary",
+      "itemsPerRow":1
+    }
+    ],
+    "ListSummary":"product-summary.shelf#shop",
+    "GridSummary":"product-summary.shelf#shop"
+    }
+  },
+  
+  "product-summary.shelf#shop":{
+  "children":["product-summary-name", "product-summary-image", "product-price","product-summary-buy-button"]
+  }
+    
 }
