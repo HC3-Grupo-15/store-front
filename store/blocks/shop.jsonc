@@ -1,12 +1,22 @@
+//28.08.2021 
+// alterado sequências (imagem, nome, preço)
+// alterado tamanho dos textos e cores
+// adicionado opcao de ordenacao para o usuario
+// adicionado ordenacao do menor preço para o maior
+// alterado cores de destaque e também de "sucess" no manifest Json (amarelo - tag saving e laranja-economize xxx)
+
 {
   "store.custom#shop": {
     "blocks": ["search-result-layout.customQuery#shop"]
   },
   "search-result-layout.customQuery#shop": {
     "props": {
+      
       "querySchema": {
-      "skusFilter": "ALL",
+      "orderByField": "OrderByPriceASC", //order from the cheapest
+      "skusFilter": "ALL", //First_Avaiable is better for performance
       "simulationBehavior": "skip"
+      
       }
     },
     "blocks": [
@@ -18,11 +28,15 @@
   "search-result-layout.desktop#shop": {
     "children": [
       "rich-text#shop",
+      "order-by.v2",
+      
       "search-title.v2",
       "search-content#shop"
     ],
     "props":{
+     
      "pagination": "showMore"
+     
     }
   },
   "rich-text#shop": {
@@ -66,7 +80,7 @@
   },
   
   "product-summary.shelf#shop":{
-  "children":["product-summary-name", "product-summary-image", "product-price","product-summary-buy-button"]
+  "children":["product-summary-image","product-summary-name","product-price","product-summary-buy-button"]
   }
     
 }

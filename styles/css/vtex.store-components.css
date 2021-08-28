@@ -39,3 +39,17 @@
 .autoCompleteOuterContainer{
     width:min-content;
 }
+
+.sellingPrice{
+    font-size: 1.25rem;
+    color: grey;
+    /* background-color:green; */
+}
+
+.productNameContainer{
+    /* font: "t-heading-1"; */
+    font-size: 2.5rem ;
+    color: rgb(32, 32, 32);
+    
+    /* background-color:crimson; */
+}
