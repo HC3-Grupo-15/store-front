@@ -67,7 +67,6 @@
     "children": [
       "menu-item#shop",
       "menu-item#about-us",
-      "menu-item#register",
       "menu-item#leads"
     ]
   },
@@ -78,7 +77,6 @@
     "children": [
       "menu-item#shop",
       "menu-item#about-us",
-      "menu-item#register",
       "menu-item#leads"
     ],
     "props": {
@@ -115,21 +113,7 @@
       }
     }
   },
-  "menu-item#register": {
-    "props": {
-      "id": "menu-item-register",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Register",
-        "text": "Register"
-      }
-    }
-  },
+  
   "menu-item#leads": {
     "props": {
       "id": "menu-item-leads",
