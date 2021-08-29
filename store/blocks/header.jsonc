@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "header-row#1-desktop"
-    ]
+    "children": ["header-row#1-desktop"]
   },
   "header-row#1-desktop": {
     "children": [
@@ -26,7 +24,8 @@
 
       
       "inverted": true,
-      "blockClass":"header-desktop"
+      "blockClass": "headerDesktop",
+      "sticky": true
     }
   },
   "logo#desktop": {
@@ -38,11 +37,10 @@
     }
   },
   "header-layout.mobile": {
-    "children": [
-      "header-row#1-mobile"
-    ]
+    "children": ["header-row#1-mobile"]
   },
   "header-row#1-mobile": {
+<<<<<<< Updated upstream
     "children": [
       "drawer",
       "search-bar",
@@ -50,10 +48,14 @@
       "logo#mobile",
       "minicart.v2"
     ],
+=======
+    "children": ["drawer", "search-bar", "header-spacer", "logo#mobile"],
+>>>>>>> Stashed changes
     "props": {
       "fullWidth": true,
       "inverted": true,
-      "blockClass":"header-mobile"
+      "blockClass": "headerMobile",
+      "sticky": true
     }
   },
   "logo#mobile": {
@@ -66,7 +68,7 @@
   },
   "vtex.menu@2.x:menu#header": {
     "props": {
-      "blockClass":"menu-desktop"
+      "blockClass": "menu-desktop"
     },
     "children": [
       "menu-item#shop",
@@ -76,9 +78,7 @@
     ]
   },
   "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
+    "children": ["menu#drawer"]
   },
   "menu#drawer": {
     "children": [
@@ -92,7 +92,7 @@
     }
   },
   "menu-item#shop": {
-    "props":{
+    "props": {
       "id": "menu-item-shop",
       "type": "custom",
       "iconId": null,
@@ -107,7 +107,7 @@
     }
   },
   "menu-item#about-us": {
-    "props":{
+    "props": {
       "id": "menu-item-about-us",
       "type": "custom",
       "iconId": null,
@@ -122,7 +122,7 @@
     }
   },
   "menu-item#register": {
-    "props":{
+    "props": {
       "id": "menu-item-register",
       "type": "custom",
       "iconId": null,
@@ -137,7 +137,7 @@
     }
   },
   "menu-item#leads": {
-    "props":{
+    "props": {
       "id": "menu-item-leads",
       "type": "custom",
       "iconId": null,

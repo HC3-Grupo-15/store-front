@@ -1,109 +1,327 @@
 {
-    "store.custom#about-us": {
-        "blocks": [
-            "responsive-layout.desktop#about-desktop",
-            "responsive-layout.mobile#about-mobile"
-        ]
-    },
-    "responsive-layout.desktop#about-desktop": {
-        "children": [
-            "stack-layout#intro",
-            "flex-layout.row#about-us",
-            "back-to-top-button"
-        ]
-    },
-    "responsive-layout.mobile#about-mobile": {
-        "children": [
-            "flex-layout.row#about-us"
-        ]
-    },
-    "stack-layout#intro": {
-      "children": [
-        "image#intro",
-        "rich-text#corebiz",
-        "rich-text#corebiz2",
-        "image#corebiz"
-      ]
-    },
-    "rich-text#corebiz": {
-        "props": {
-          "textAlignment": "CENTER",
-          "textPosition": "CENTER",
-          "text": "# we are",
-          "textColor": "c-on-emphasis",
-          "font": "t-heading-1",
-          "blockClass": "about-text-intro"
-        }
-    },
-    "rich-text#corebiz2": {
-        "props": {
-          "textAlignment": "CENTER",
-          "textPosition": "CENTER",
-          "text": "# global.",
-          "textColor": "c-on-emphasis",
-          "font": "t-heading-1",
-          "blockClass": "about-text-intro2"
-        }
-    },
-    "image#intro": {
-      "props": {
-        "blockClass": "about-intro",
-        "width": "100%",
-        "src": "assets/Banner-Mapa-Corebiz-BR.png"
-      }
-    },
-    "image#corebiz": {
-        "props": {
-          "blockClass": "image-corebiz-about",
-          "width": 200,
-          "src": "assets/Logo-Corebiz-Reduced.png"
-        }
-      },
-    "back-to-top-button":{
-      "props":{
-        "displayThreshold": 800,
-        "display": "caret-icon"
-      }
-    },
-    "flex-layout.row#about-us": {
-        "children": [
-            "info-card#about-us",
-            "flex-layout.row#mission"
-        ]
-    },
-    "info-card#about-us": {
-        "props": {
-          "id": "info-card-example",
-          "isFullModeStyle": false,
-          "textPosition": "left",
-          "imageUrl": "https://www.corebiz.ag/wp-content/uploads/2021/02/Banner-Mapa-Corebiz-EN.png",
-          "headline": "a corebiz",
-          "callToActionText": "DISCOVER",
-          "callToActionUrl": "/sale/d",
-          "blockClass": "info-card-example",
-          "textAlignment": "center"
-        }
-    },
-    "flex-layout.row#mission":{
-        "props":{
-            "blockClass": "mission",
-            "fullWidth": true,
-            "marginTop": 3,
-            "preserveLayoutOnMobile": true,
-            "preventVerticalStretch": true
-        },
-        "children":[
-            "rich-text#mission"
-        ]
-    },
-    "rich-text#mission": {
-        "props": {
-          "textAlignment": "CENTER",
-          "textPosition": "CENTER",
-          "text": "# mission \n ### To be the largest company of experience, technology and marketing for commerce in Latin America.",
-          "textColor": "c-on-emphasis",
-          "font": "t-heading-1",
-          "blockClass": "mission"
-        }
+  "store.custom#about-us": {
+    "blocks": ["flex-layout.row#about-us"]
+  },
+  "flex-layout.row#about-us": {
+    "children": ["flex-layout.col#about-us-container"],
+    "props": {
+      "blockClass": "aboutUsContainer"
     }
+  },
+  "flex-layout.col#about-us-container": {
+    "children": [
+      "flex-layout.col#who-we-are",
+      "flex-layout.row#resume-container",
+      "flex-layout.col#contacts-container"
+    ]
+  },
+  "flex-layout.col#who-we-are": {
+    "children": [
+      "flex-layout.row#title-container",
+      "flex-layout.row#subtitle-container",
+      "flex-layout.row#paragraph-container"
+    ],
+    "props": {
+      "blockClass": "whoWeAreContainer"
+    }
+  },
+  "flex-layout.row#title-container": {
+    "children": ["rich-text#who-we-are-title"]
+  },
+  "flex-layout.row#subtitle-container": {
+    "children": ["rich-text#who-we-are-subtitle"]
+  },
+  "flex-layout.row#paragraph-container": {
+    "children": ["rich-text#who-we-are-paragraph"]
+  },
+  "rich-text#who-we-are-title": {
+    "props": {
+      "text": "QUEM SOMOS?",
+      "blockClass": "regularTitle"
+    }
+  },
+  "rich-text#who-we-are-subtitle": {
+    "props": {
+      "text": "Um pouco de história",
+      "blockClass": "regularSubtitle"
+    }
+  },
+  "rich-text#who-we-are-paragraph": {
+    "props": {
+      "text": "Em Santa Monica, 2013, nascemos como uma produtora digital focada em e-commerce, com nome de **Sta_monica**, e ainda no mesmo ano passamos a prestar serviços de SEO e ongoing de tecnologia para plataformas VTEX, na época, tínhamos 30 clientes ativos. No ano de 2014, absorvemos a **B.New/OBD**, agência especializada em CRO + UX e criamos a **Newdeli**, produtora de e-commerce focada em SMB. Em 2015, compramos a **Wunderbiz**, empresa focada em CRM, e nos dois anos seguintes unificamos todas as marcas e criamos uma nova agência. No ano de 2018, iniciamos nossa expansão global e portfólio de serviços, além disso, adquirimos a **Estúdio12** e **SmartNip**. Já em 2019, adotamos uma nova cultura, mudamos para um novo escritório e fizemos mais um rebrand. Ano passado adquirimos a Click QI, e este ano, iniciamos nossa expansão europeia com o início da Corebiz espanha.",
+      "blockClass": ["regularText", "whiteText"]
+    }
+  },
+  "flex-layout.row#resume-container": {
+    "children": [
+      "flex-layout.col#vision-container",
+      "flex-layout.col#values-container",
+      "flex-layout.col#business"
+    ],
+    "props": {
+      "blockClass": "resumeContainer"
+    }
+  },
+  "flex-layout.col#vision-container": {
+    "children": ["rich-text#vision-title", "rich-text#vision-paragraph"]
+  },
+  "rich-text#vision-title": {
+    "props": {
+      "text": "Objetivo",
+      "blockClass": "regularTitle",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#vision-paragraph": {
+    "props": {
+      "text": "Sermos a maior empresa de experiência, tecnologia e marketing voltada para o comércio na América Latina.",
+      "blockClass": ["visionText", "blackText"],
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#values-container": {
+    "children": ["rich-text#values-title", "flex-layout.col#values-list"]
+  },
+  "rich-text#values-title": {
+    "props": {
+      "text": "Valores",
+      "blockClass": "regularTitle",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#values-list": {
+    "children": [
+      "rich-text#values-list-item-1",
+      "rich-text#values-list-item-2",
+      "rich-text#values-list-item-3",
+      "rich-text#values-list-item-4",
+      "rich-text#values-list-item-5"
+    ],
+    "props": {
+      "blockClass": "listContainer"
+    }
+  },
+  "rich-text#values-list-item-1": {
+    "props": {
+      "text": ".Determinação",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "rich-text#values-list-item-2": {
+    "props": {
+      "text": ".Inovação",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "rich-text#values-list-item-3": {
+    "props": {
+      "text": ".Coragem",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "rich-text#values-list-item-4": {
+    "props": {
+      "text": ".Agilidade",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "rich-text#values-list-item-5": {
+    "props": {
+      "text": ".Colaboração",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "flex-layout.col#business": {
+    "children": ["rich-text#business-title", "flex-layout.col#business-list"]
+  },
+  "rich-text#business-title": {
+    "props": {
+      "text": "Negócios",
+      "blockClass": "regularTitle",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#business-list": {
+    "children": [
+      "rich-text#business-list-item-1",
+      "rich-text#business-list-item-2",
+      "rich-text#business-list-item-3"
+    ],
+    "props": {
+      "blockClass": "listContainer"
+    }
+  },
+  "rich-text#business-list-item-1": {
+    "props": {
+      "text": ".Experiência",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "rich-text#business-list-item-2": {
+    "props": {
+      "text": ".Tecnologia",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "rich-text#business-list-item-3": {
+    "props": {
+      "text": ".Marketing",
+      "blockClass": ["listItemText", "blackText"]
+    }
+  },
+  "flex-layout.col#contacts-container": {
+    "children": [
+      "flex-layout.row#contacts-title-container",
+      "flex-layout.row#contacts-list-container"
+    ],
+    "props": {
+      "blockClass": "contactsContainer"
+    }
+  },
+  "flex-layout.row#contacts-list-container": {
+    "children": [
+      "flex-layout.col#contact-data-bra",
+      "flex-layout.col#contact-data-arg",
+      "flex-layout.col#contact-data-mex",
+      "flex-layout.col#contact-data-chi",
+      "flex-layout.col#contact-data-esp"
+    ],
+    "props": {
+      "colGap": 6
+    }
+  },
+  "flex-layout.row#contacts-title-container": {
+    "children": ["rich-text#contacts-title"]
+  },
+  "rich-text#contacts-title": {
+    "props": {
+      "text": "Como nos encontrar?",
+      "blockClass": "regularTitle"
+    }
+  },
+  "flex-layout.col#contact-data-bra": {
+    "children": [
+      "rich-text#contact-title-bra",
+      "rich-text#contact-email-bra",
+      "rich-text#contact-address-bra"
+    ]
+  },
+  "rich-text#contact-title-bra": {
+    "props": {
+      "text": "Brasil",
+      "blockClass": ["dataTitle", "whiteText"]
+    }
+  },
+  "rich-text#contact-email-bra": {
+    "props": {
+      "text": "brasil@corebiz.ag",
+      "blockClass": ["dataInfo", "linkText"]
+    }
+  },
+  "rich-text#contact-address-bra": {
+    "props": {
+      "text": "Avenida Andrômeda, 2000. Bloco 6 e 8 Alphaville SP",
+      "blockClass": ["dataInfo", "whiteText"]
+    }
+  },
+  "flex-layout.col#contact-data-arg": {
+    "children": [
+      "rich-text#contact-title-arg",
+      "rich-text#contact-email-arg",
+      "rich-text#contact-address-arg"
+    ]
+  },
+  "rich-text#contact-title-arg": {
+    "props": {
+      "text": "Argentina",
+      "blockClass": ["dataTitle", "whiteText"]
+    }
+  },
+  "rich-text#contact-email-arg": {
+    "props": {
+      "text": "argentina@corebiz.ag",
+      "blockClass": ["dataInfo", "linkText"]
+    }
+  },
+  "rich-text#contact-address-arg": {
+    "props": {
+      "text": "Soler 5518, 3 Piso C1425BYF Palermo Hollywood CABA",
+      "blockClass": ["dataInfo", "whiteText"]
+    }
+  },
+  "flex-layout.col#contact-data-mex": {
+    "children": [
+      "rich-text#contact-title-mex",
+      "rich-text#contact-email-mex",
+      "rich-text#contact-address-mex"
+    ]
+  },
+  "rich-text#contact-title-mex": {
+    "props": {
+      "text": "México",
+      "blockClass": ["dataTitle", "whiteText"]
+    }
+  },
+  "rich-text#contact-email-mex": {
+    "props": {
+      "text": "mexico@corebiz.ag",
+      "blockClass": ["dataInfo", "linkText"]
+    }
+  },
+  "rich-text#contact-address-mex": {
+    "props": {
+      "text": "Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo, 11520 Ciudad de México, CDMX",
+      "blockClass": ["dataInfo", "whiteText"]
+    }
+  },
+  "flex-layout.col#contact-data-chi": {
+    "children": [
+      "rich-text#contact-title-chi",
+      "rich-text#contact-email-chi",
+      "rich-text#contact-address-chi"
+    ]
+  },
+  "rich-text#contact-title-chi": {
+    "props": {
+      "text": "Chile",
+      "blockClass": ["dataTitle", "whiteText"]
+    }
+  },
+  "rich-text#contact-email-chi": {
+    "props": {
+      "text": "chile@corebiz.ag",
+      "blockClass": ["dataInfo", "linkText"]
+    }
+  },
+  "rich-text#contact-address-chi": {
+    "props": {
+      "text": "Roberto del Río 1137, Providencia.",
+      "blockClass": ["dataInfo", "whiteText"]
+    }
+  },
+  "flex-layout.col#contact-data-esp": {
+    "children": [
+      "rich-text#contact-title-esp",
+      "rich-text#contact-email-esp",
+      "rich-text#contact-address-esp"
+    ]
+  },
+  "rich-text#contact-title-esp": {
+    "props": {
+      "text": "Espanha",
+      "blockClass": ["dataTitle", "whiteText"]
+    }
+  },
+  "rich-text#contact-email-esp": {
+    "props": {
+      "text": "esp@corebiz.ag",
+      "blockClass": ["dataInfo", "linkText"]
+    }
+  },
+  "rich-text#contact-address-esp": {
+    "props": {
+      "text": "Avenida de Brasil, 29 - Oficinas. 28020 Madrid",
+      "blockClass": ["dataInfo", "whiteText"]
+    }
+  }
 }

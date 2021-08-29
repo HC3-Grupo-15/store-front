@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .headingLevel1--about-text-intro{
     font-size: 150px;
     color: #F1C233;
@@ -10,3 +11,70 @@
 .paragraph--mission{
     color:gray
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+
+.paragraph--regularTitle,
+.paragraph--regularText,
+.paragraph--visionText,
+.paragraph--listItemText,
+.paragraph--dataTitle,
+.paragraph--dataInfo {
+  font-family: "Roboto", sans-serif;
+}
+
+.paragraph--regularTitle {
+  font-size: 52px;
+  font-weight: 600;
+  color: #f1c233;
+}
+
+.paragraph--regularSubtitle {
+  font-size: 24px;
+  font-weight: 100;
+  color: #8d7979;
+}
+
+.paragraph--regularText,
+.paragraph--listItemText {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.paragraph--visionText,
+.paragraph--listItemText {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.paragraph--visionText {
+  text-align: justify;
+}
+
+.container--listItemText {
+  padding-left: 30%;
+}
+
+.paragraph--dataTitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.link--linkText {
+  text-decoration: none;
+  color: #fff;
+}
+
+.paragraph--dataInfo {
+  font-size: 14px;
+}
+
+.paragraph--whiteText {
+  color: #fff;
+}
+
+.paragraph--blackText {
+  color: #000;
+}
+>>>>>>> Stashed changes

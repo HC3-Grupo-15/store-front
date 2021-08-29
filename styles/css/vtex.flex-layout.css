@@ -1,0 +1,19 @@
+.flexCol--whoWeAreContainer {
+  background-image: url("https://fcc-assets.s3.sa-east-1.amazonaws.com/about-bg-top.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding: 65px 20px;
+}
+
+.flexRow--resumeContainer {
+  padding: 50px 20px;
+}
+
+.flexCol--contactsContainer {
+  background-image: url("https://fcc-assets.s3.sa-east-1.amazonaws.com/about-bg-bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 20px;
+}
