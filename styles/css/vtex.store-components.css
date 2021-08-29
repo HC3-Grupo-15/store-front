@@ -1,34 +1,22 @@
-<<<<<<< Updated upstream
-.logoImage{
-    padding-bottom: 10px;
-    padding-right: 10px;
+.logoContainer{
+  box-sizing: border-box;
+  padding: 0;
 }
 
-.logoContainer{
-    padding-bottom: 10px;
-    padding-right: 10px;
-=======
 .container {
   margin: 0;
   padding: 0;
->>>>>>> Stashed changes
 }
 
 .logoImage {
   padding-bottom: 10px;
 }
 
-<<<<<<< Updated upstream
 .searchBarContainer :global(.vtex-input-prefix__group){
     border: none;
     border-radius: 0px;
     border-bottom: 2px solid #DCDCDC;
     width: 15rem;
-=======
-.logoContainer {
-  box-sizing: border-box;
-  padding: 0;
->>>>>>> Stashed changes
 }
 
 .buyButtonText {
@@ -42,7 +30,6 @@
   width: 20rem;
 }
 
-<<<<<<< Updated upstream
 .searchBarContainer :global(.vtex-input__suffix){
     border: none;
     border-radius: 0px;
@@ -67,7 +54,6 @@
     
     /* background-color:crimson; */
 }
-=======
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
   color: #dcdcdc;
   background-color: #000000;
@@ -83,4 +69,11 @@
   border-radius: 0px;
   background-color: #000000;
 }
->>>>>>> Stashed changes
+
+.imageElement--image-home{
+    border-radius: 15px
+}
+
+.container--home{
+    background-color: black;
+}

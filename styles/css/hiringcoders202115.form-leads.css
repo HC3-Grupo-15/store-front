@@ -1,0 +1,136 @@
+.container {
+	width: 100%;
+	min-height: 9rem;
+	padding: 1rem;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 0 auto;
+}
+
+.title {
+    font-family: Lato, Nunito, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.form {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem auto 0;
+}
+
+.label {
+    width: 33%;
+    min-height: 3rem;
+    border: none;
+    border-radius: 5px;
+    flex: 2;
+}
+
+.input {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.input:focus {
+    border: 1px solid;
+}
+
+.input::placeholder {
+    font-size: 1rem;
+}
+
+.ContainerInput{
+    padding-bottom: 10px;
+}
+
+.buttonSubmit {
+    text-transform: uppercase;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 20%;
+    color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #DE702F;
+    transition-duration: 0.4s;
+}
+
+.buttonSubmit:hover{
+    background-color: #EBA982;
+}
+
+
+.registered {
+    display: flex;
+    width: 100%;
+    height: 9rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.message {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    max-width: 20rem;
+    min-height: 3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 720px) {
+	.form {
+        flex-direction: column;
+   }
+    .label {
+        width: 100%;
+        flex: inherit;
+   }
+    .buttonSubmit {
+        width: 100%;
+        flex: inherit;
+   }
+    
+}
