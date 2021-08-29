@@ -16,8 +16,8 @@
       
       "flex-layout.row#home",
       "rich-text#title",
-      "rich-text#description2",     
-      "rich-text#description1",
+      "rich-text#description1",     
+      "rich-text#description2",
       "rich-text#description3"
       
     ]
@@ -61,21 +61,21 @@
 
   "rich-text#description1": { 
     "props": { 
-      // "text": "We act on every user’s digital journey. From configuring platforms, implementations and integrations, to delivering an excellent consumer experience.Experience this case example with one of our main customers: \nVans - Hiring Coders 2021 - 15",
-      "text": "Experience this case example with one of our main customers: Vans - Hiring Coders 2021 - 15\n*hiring coders 2021 - group 15. [official corebiz Website](https://www.corebiz.ag/pt/)",
+      "text": "we are here for whatever you need!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-4",
+      "font": "t-heading-1",
       "blockClass":"desc-1"
     }
   },
 
   "rich-text#description2": { 
     "props": { 
-      "text": "we are here for whatever you need!",
+      // "text": "We act on every user’s digital journey. From configuring platforms, implementations and integrations, to delivering an excellent consumer experience.Experience this case example with one of our main customers: \nVans - Hiring Coders 2021 - 15",
+      "text": "Experience this case example with one of our main customers: Vans - Hiring Coders 2021 - 15\n*hiring coders 2021 - group 15. [official corebiz Website](https://www.corebiz.ag/pt/)",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1",
+      "font": "t-heading-4",
       "blockClass":"desc-2"
     }
   },
