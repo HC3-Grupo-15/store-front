@@ -53,3 +53,7 @@
     
     /* background-color:crimson; */
 }
+
+.imageElement--image-home{
+    border-radius: 50px
+}

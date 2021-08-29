@@ -1,16 +1,86 @@
+//home
+
 {
   "store.home": { 
     "blocks": [
-      "rich-text",
-      "lead-form"
+      "responsive-layout.desktop#home-desktop"
+      // "lead-form"
     ]
   },
-  "rich-text": { 
+
+  "responsive-layout.desktop#home-desktop":{
+    "children":[
+      
+      "flex-layout.row#home",
+      "rich-text#title",     
+      "rich-text#description1",
+      "rich-text#description2",
+      "rich-text#description3"
+      
+      
+    ]
+  },
+
+  "flex-layout.row#home": {
+    "children": [
+        "image#home"
+        
+    ],
+    "props":{
+      "marginBottom": 7,
+      "paddingTop": 7
+      // "paddingBottom": 7
+    }
+  },
+
+  "image#home":{
+    "props": {
+      "src": "assets/Tenis_Vans_Pro_Larry_Edgar.jpg",
+      // "width": "100%"
+      "maxHeight": 500,
+      "title":"corebiz - vans",
+      "blockClass":"image-home"
+    }
+
+  },
+  "rich-text#title": { 
     "props": { 
-      "text": "VTEX Store Framework",
+      "text": "we are corebiz.",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "font": "t-heading-1",
+      "blockClass":"title-home"
+    }
+  },
+
+  "rich-text#description1": { 
+    "props": { 
+      "text": "We act on every user’s digital journey. From configuring platforms, implementations and integrations, to delivering an excellent consumer experience.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-4",
+      "blockClass":"desc-1"
+    }
+  },
+
+  "rich-text#description2": { 
+    "props": { 
+      "text": "we are here for whatever you need!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass":"desc-2"
+    }
+  },
+
+  "rich-text#description3": { 
+    "props": { 
+      "text": "Leave your details with us and we will contact you.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6",
+      "blockClass":"desc-3"
     }
   }
+
 }
