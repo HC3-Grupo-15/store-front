@@ -1,0 +1,13 @@
+.flexRowContent--layout-home{
+    width:100%;
+    /* background-color: black; */
+    /* padding: 0; */
+    /* margin-top: 10%; */
+    margin-left: 0;
+    margin-right: 0;
+ 
+}
+
+.stretchChildrenWidth{
+    width: 15cm;
+}

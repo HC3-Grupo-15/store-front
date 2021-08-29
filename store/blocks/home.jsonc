@@ -3,20 +3,22 @@
 {
   "store.home": { 
     "blocks": [
-      "responsive-layout.desktop#home-desktop"
-      // "lead-form"
-    ]
+      "responsive-layout.desktop#home-desktop",
+      "lead-form"
+    ],
+    "props":{
+      "blockClass":"home-block"
+    }
   },
 
   "responsive-layout.desktop#home-desktop":{
     "children":[
       
       "flex-layout.row#home",
-      "rich-text#title",     
+      "rich-text#title",
+      "rich-text#description2",     
       "rich-text#description1",
-      "rich-text#description2",
       "rich-text#description3"
-      
       
     ]
   },
@@ -24,20 +26,24 @@
   "flex-layout.row#home": {
     "children": [
         "image#home"
+        //"rich-text#title"
         
     ],
     "props":{
-      "marginBottom": 7,
-      "paddingTop": 7
+       "paddingTop": 7,
+      // "marginBottom": 7,
       // "paddingBottom": 7
+      "blockClass":"layout-home"
     }
   },
 
   "image#home":{
     "props": {
+      //"src":"FA18_Classics_DesignAssembly_2.jpg",
       "src": "assets/Tenis_Vans_Pro_Larry_Edgar.jpg",
       // "width": "100%"
-      "maxHeight": 500,
+      
+      "maxHeight": 380,
       "title":"corebiz - vans",
       "blockClass":"image-home"
     }
@@ -45,7 +51,7 @@
   },
   "rich-text#title": { 
     "props": { 
-      "text": "we are corebiz.",
+      "text": "we are corebiz*",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1",
@@ -55,7 +61,8 @@
 
   "rich-text#description1": { 
     "props": { 
-      "text": "We act on every user’s digital journey. From configuring platforms, implementations and integrations, to delivering an excellent consumer experience.",
+      // "text": "We act on every user’s digital journey. From configuring platforms, implementations and integrations, to delivering an excellent consumer experience.Experience this case example with one of our main customers: \nVans - Hiring Coders 2021 - 15",
+      "text": "Experience this case example with one of our main customers: Vans - Hiring Coders 2021 - 15\n*hiring coders 2021 - group 15. [official corebiz Website](https://www.corebiz.ag/pt/)",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-4",
@@ -70,6 +77,16 @@
       "textPosition": "CENTER",
       "font": "t-heading-1",
       "blockClass":"desc-2"
+    }
+  },
+
+  "rich-text#corebiz4": { 
+    "props": { 
+      "text": "*Hiring Coders 2021 - Group 15. corebiz official Website:[go](https://www.corebiz.ag/pt/)",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-6",
+      "blockClass":"desc-3"
     }
   },
 
