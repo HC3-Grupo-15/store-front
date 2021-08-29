@@ -4,5 +4,8 @@
     },
     "store.custom#shop": {
       "path": "/shop"
+    },
+    "store.custom#leads": {
+      "path": "/leads"
     }
   }

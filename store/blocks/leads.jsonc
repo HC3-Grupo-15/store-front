@@ -1,0 +1,63 @@
+{
+    "store.custom#leads": {
+        "blocks": [
+            "responsive-layout.desktop#leads-desktop",
+            "responsive-layout.mobile#leads-mobile"       
+        ]
+        
+    },
+
+    "responsive-layout.desktop#leads-desktop":{
+        "children":[
+          "flex-layout.row#leads"
+          
+        ]
+      },
+    
+      "responsive-layout.mobile#leads-mobile": {
+        "children": [
+            "flex-layout.row#leads",
+            "rich-text#title1"
+        ]
+      },
+
+      "flex-layout.row#leads": {
+        "children": [
+            "image#leads",
+            "rich-text#title1"
+           
+        ],
+        "props":{
+          "paddingTop": 7,
+          "blockClass":"layout-home"
+        }
+      },
+
+      "image#leads":{
+        "props": {
+          "src":"assets/FA18_Classics_DesignAssembly_2.jpg",               
+          "maxHeight": 380,
+          "title":"corebiz - vans",
+          "blockClass":"image-home",
+          "sizes": {
+            "phone": "16:9"
+          }
+        }
+        
+      },
+      
+
+      "rich-text#title1":{
+        "props": { 
+            "text": "Verify here our leads!*",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "font": "t-heading-1",
+            "blockClass":"title-leads"
+          }
+
+      }
+
+
+
+}
