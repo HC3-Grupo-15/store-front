@@ -53,3 +53,11 @@
     
     /* background-color:crimson; */
 }
+
+.imageElement--image-home{
+    border-radius: 15px
+}
+
+.container--home{
+    background-color: black;
+}
