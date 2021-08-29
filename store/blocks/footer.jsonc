@@ -2,25 +2,77 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer"]
   },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer"]
   },
-  "flex-layout.row#footer": { 
+  "flex-layout.row#footer": {
     "children": [
-      "image"
-    ]
-  },
-  "image": {
+      "flex-layout.col#socials-container",
+      "flex-layout.col#copyright-container",
+      "flex-layout.row#logo-container"
+    ],
     "props": {
-      "width": 100
-     // "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "blockClass": "footerContainer",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#socials-container": {
+    "children": ["rich-text#socials-title", "social-networks"],
+    "props": {
+      "blockClass": "socialsContainer"
+    }
+  },
+  "rich-text#socials-title": {
+    "props": {
+      "text": "Siga a gente",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "font": "t-small"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://www.instagram.com/corebizag", "name": "Instagram" },
+        { "url": "https://pt-br.facebook.com/corebiz.ag", "name": "Facebook" },
+        {
+          "url": "https://www.linkedin.com/company/corebiz-brasil",
+          "name": "Linkedin"
+        }
+      ]
+    }
+  },
+  "flex-layout.col#copyright-container": {
+    "children": ["rich-text#copyright"],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "copyrightContainer"
+    }
+  },
+  "rich-text#copyright": {
+    "props": {
+      "text": "Todos os direitos reservados",
+      "textColor": "c-on-emphasis",
+      "textAlign": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-small"
+    }
+  },
+  "flex-layout.row#logo-container": {
+    "children": ["image#corebiz-logo"]
+  },
+  "image#corebiz-logo": {
+    "props": {
+      "src": "assets/Logo-Corebiz-Reduced.png",
+      "alt": "Logo da Corebiz"
     }
   }
+  // "image#vtex-logo": {
+  //   "props": {
+  //      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+  //   }
+  // }
 }
