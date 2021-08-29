@@ -4,6 +4,7 @@
   "store.home": { 
     "blocks": [
       "responsive-layout.desktop#home-desktop",
+      "responsive-layout.mobile#home-mobile",
       "lead-form"
     ],
     "props":{
@@ -23,31 +24,42 @@
     ]
   },
 
+  "responsive-layout.mobile#home-mobile": {
+    "children": [
+      "flex-layout.row#home",
+      "rich-text#title",
+      "rich-text#description1",     
+      "rich-text#description2",
+      "rich-text#description3"
+    ]
+  },
+
   "flex-layout.row#home": {
     "children": [
         "image#home"
-        //"rich-text#title"
-        
+       
     ],
     "props":{
-       "paddingTop": 7,
-      // "marginBottom": 7,
-      // "paddingBottom": 7
+      "paddingTop": 7,
       "blockClass":"layout-home"
     }
   },
+  
 
   "image#home":{
     "props": {
       "src":"assets/FA18_Classics_DesignAssembly_2.jpg",
       // "src": "assets/Tenis_Vans_Pro_Larry_Edgar.jpg",
-      // "width": "100%"
-      
+            
       "maxHeight": 380,
       "title":"corebiz - vans",
-      "blockClass":"image-home"
+      "blockClass":"image-home",
+      "sizes": {
+        //"desktop": "16:9",
+        "phone": "16:9"
+      }
     }
-
+    
   },
   "rich-text#title": { 
     "props": { 

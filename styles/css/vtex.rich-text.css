@@ -74,6 +74,7 @@
 .container--desc-1{
     max-height: 4cm;
     margin-top: 0;
+    margin-bottom: 2rem;
     /* background-color: black; */
 }
 .container--desc-2{
