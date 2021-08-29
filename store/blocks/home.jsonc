@@ -39,8 +39,8 @@
 
   "image#home":{
     "props": {
-      //"src":"FA18_Classics_DesignAssembly_2.jpg",
-      "src": "assets/Tenis_Vans_Pro_Larry_Edgar.jpg",
+      "src":"assets/FA18_Classics_DesignAssembly_2.jpg",
+      // "src": "assets/Tenis_Vans_Pro_Larry_Edgar.jpg",
       // "width": "100%"
       
       "maxHeight": 380,
