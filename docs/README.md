@@ -12,7 +12,6 @@ Grupo:
     ●  Mayara Becker
     ●  Stenio Almeida
 
-
 # Grupo 15 – Patrocinador Corebiz
 Desenvolver um projeto com o uso de API. A temática da API deve estar relacionada com o mercado do patrocinador Corebiz.
 
