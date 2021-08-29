@@ -17,12 +17,10 @@
       "logo#desktop",
       "header-spacer",
       "minicart.v2"
-      
     ],
     "props": {
       "fullWidth": true,
 
-      
       "inverted": true,
       "blockClass": "headerDesktop",
       "sticky": true
@@ -40,7 +38,6 @@
     "children": ["header-row#1-mobile"]
   },
   "header-row#1-mobile": {
-<<<<<<< Updated upstream
     "children": [
       "drawer",
       "search-bar",
@@ -48,9 +45,6 @@
       "logo#mobile",
       "minicart.v2"
     ],
-=======
-    "children": ["drawer", "search-bar", "header-spacer", "logo#mobile"],
->>>>>>> Stashed changes
     "props": {
       "fullWidth": true,
       "inverted": true,
@@ -151,9 +145,9 @@
       }
     }
   },
-  "search-bar":{
-    "props":{
-      "width":50
-  }
+  "search-bar": {
+    "props": {
+      "width": 50
+    }
   }
 }
