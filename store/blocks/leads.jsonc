@@ -1,11 +1,13 @@
 {
     "store.custom#leads": {
         "blocks": [
-            "responsive-layout.desktop#leads-desktop",
-            "responsive-layout.mobile#leads-mobile"       
+            //"flex-layout.row#leads"
+             "responsive-layout.desktop#leads-desktop",
+             "responsive-layout.mobile#leads-mobile"       
         ]
         
     },
+
 
     "responsive-layout.desktop#leads-desktop":{
         "children":[
@@ -36,7 +38,7 @@
       "image#leads":{
         "props": {
           "src":"assets/FA18_Classics_DesignAssembly_2.jpg",               
-          "maxHeight": 380,
+          "maxHeight": 500,
           "title":"corebiz - vans",
           "blockClass":"image-home",
           "sizes": {
@@ -49,7 +51,7 @@
 
       "rich-text#title1":{
         "props": { 
-            "text": "Verify here our leads!*",
+            "text": "Verify here our leads!",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
             "font": "t-heading-1",
