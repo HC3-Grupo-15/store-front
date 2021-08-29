@@ -138,7 +138,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/leads",
+        "href": "/leads-client",
         "noFollow": false,
         "tagTitle": "Leads",
         "text": "Leads"

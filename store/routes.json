@@ -5,7 +5,7 @@
     "store.custom#shop": {
       "path": "/shop"
     },
-    "store.custom#leads": {
-      "path": "/leads"
+    "store.custom#leads-client": {
+      "path": "/leads-client"
     }
   }

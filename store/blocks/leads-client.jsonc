@@ -1,5 +1,5 @@
 {
-    "store.custom#leads": {
+    "store.custom#leads-client": {
         "blocks": [
             //"flex-layout.row#leads"
              "responsive-layout.desktop#leads-desktop",

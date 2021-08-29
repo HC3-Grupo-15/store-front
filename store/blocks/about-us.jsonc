@@ -1,8 +1,130 @@
 {
   "store.custom#about-us": {
-    "blocks": ["flex-layout.row#about-us"]
+    "blocks": [
+      "responsive-layout.desktop#about-desktop",
+      "responsive-layout.mobile#about-mobile",
+      "flex-layout.row#about-us2"
+    ]
   },
-  "flex-layout.row#about-us": {
+
+  "responsive-layout.desktop#about-desktop": {
+    "children": [
+        "stack-layout#intro",
+        "flex-layout.row#about-us",
+        "back-to-top-button"
+    ]
+},
+"responsive-layout.mobile#about-mobile": {
+    "children": [
+        "flex-layout.row#about-us"
+    ]
+},
+"stack-layout#intro": {
+  "children": [
+    "image#intro",
+    "rich-text#corebiz",
+    "rich-text#corebiz2",
+    "image#corebiz"
+  ]
+},
+"rich-text#corebiz": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# we are",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-1",
+      "blockClass": "about-text-intro"
+    }
+},
+"rich-text#corebiz2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# global.",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-1",
+      "blockClass": "about-text-intro2"
+    }
+},
+"image#intro": {
+  "props": {
+    "blockClass": "about-intro",
+    "width": "100%",
+    "src": "assets/Banner-Mapa-Corebiz-BR.png"
+  }
+},
+"image#corebiz": {
+    "props": {
+      "blockClass": "image-corebiz-about",
+      "width": 200,
+      "src": "assets/Logo-Corebiz-Reduced.png"
+    }
+  },
+"back-to-top-button":{
+  "props":{
+    "displayThreshold": 800,
+    "display": "caret-icon"
+  }
+},
+"flex-layout.row#about-us": {
+    "children": [
+        "info-card#about-us",
+        "flex-layout.row#mission"
+    ]
+},
+"info-card#about-us": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://www.corebiz.ag/wp-content/uploads/2021/02/Banner-Mapa-Corebiz-EN.png",
+      "headline": "a corebiz",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+},
+"flex-layout.row#mission":{
+    "props":{
+        "blockClass": "mission",
+        "fullWidth": true,
+        "marginTop": 3,
+        "preserveLayoutOnMobile": true,
+        "preventVerticalStretch": true
+    },
+    "children":[
+        "rich-text#mission"
+    ]
+},
+"rich-text#mission": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# mission \n ### To be the largest company of experience, technology and marketing for commerce in Latin America.",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-1",
+      "blockClass": "mission"
+    }
+},
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  "flex-layout.row#about-us2": {
     "children": ["flex-layout.col#about-us-container"],
     "props": {
       "blockClass": "aboutUsContainer"
