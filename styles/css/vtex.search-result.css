@@ -10,3 +10,7 @@
   row-gap: 60px;
   padding: 60px 0;
 }
+
+.searchResultContainer{
+  max-width: none;
+}

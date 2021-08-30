@@ -107,3 +107,8 @@ color: #F1C233;
 .headingLevel1--about-text-intro2{
 font-size: 150px;
 }
+
+.paragraph--title-shop, .paragraph--title-home{
+  margin-bottom: 0;
+}
+

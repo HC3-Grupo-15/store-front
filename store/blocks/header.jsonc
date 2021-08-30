@@ -12,10 +12,10 @@
     "children": [
       "header-border",
       "search-bar",
-      //"header-spacer",
+      "header-spacer",
       "vtex.menu@2.x:menu#header",
       "logo#desktop",
-      "header-spacer",
+      //"header-spacer",
       "minicart.v2"
     ],
     "props": {
@@ -94,7 +94,7 @@
         "href": "/shop",
         "noFollow": false,
         "tagTitle": "Shop",
-        "text": "Shop"
+        "text": "produtos"
       }
     }
   },
@@ -109,7 +109,7 @@
         "href": "/about-us",
         "noFollow": false,
         "tagTitle": "about-us",
-        "text": "About Us"
+        "text": "sobre nós"
       }
     }
   },
@@ -125,7 +125,7 @@
         "href": "/leads-client",
         "noFollow": false,
         "tagTitle": "Leads",
-        "text": "Leads"
+        "text": "clientes"
       }
     }
   },

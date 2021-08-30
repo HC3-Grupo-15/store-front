@@ -15,6 +15,7 @@
       "flex-layout.row#logo-container"
     ],
     "props": {
+      "fullWidth":true,
       "blockClass": "footerContainer",
       "verticalAlign": "middle"
     }

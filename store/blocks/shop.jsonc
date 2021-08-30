@@ -27,7 +27,6 @@
     "children": [
       "rich-text#shop",
       "order-by.v2",
-
       "search-title.v2",
       "search-content#shop"
     ],
@@ -40,9 +39,8 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Nossos produtos",
-      "textColor": "c-on-emphasis",
       "font": "t-heading-1",
-      "blockClass": "mission"
+      "blockClass": "title-shop"
     }
   },
   "search-content#shop": {
