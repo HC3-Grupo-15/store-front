@@ -41,3 +41,9 @@
   margin: auto;
   width:80%
 }
+
+@media (max-width: 720px) {
+  .flexCol--whoWeAreContainer {
+    height: 1000px;
+  }
+}
