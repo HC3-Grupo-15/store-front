@@ -1,11 +1,11 @@
 .headerRowContainer--headerDesktop {
   height: 100px;
-  align-items: flex-end;
-  padding: 0 20px;
 }
 
 .headerRowContainer--headerMobile {
   height: 70px;
-  align-items: flex-end;
+}
+
+.headerRowContainer {
   padding: 0 20px;
 }

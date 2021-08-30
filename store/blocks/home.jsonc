@@ -1,115 +1,103 @@
-//home
-
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
       "responsive-layout.desktop#home-desktop",
-      "responsive-layout.mobile#home-mobile",
-      "lead-form"
-    ],
-    "props":{
-      "blockClass":"home-block"
-    }
+      "responsive-layout.mobile#home-mobile"
+    ]
   },
 
-  "responsive-layout.desktop#home-desktop":{
-    "children":[
-      
-      "flex-layout.row#home",
-      "rich-text#title",
-      "rich-text#description1",     
-      "rich-text#description2",
-      "rich-text#description3"
-      
-    ]
+  "responsive-layout.desktop#home-desktop": {
+    "children": ["flex-layout.row#homeContainer"]
   },
 
   "responsive-layout.mobile#home-mobile": {
-    "children": [
-      "flex-layout.row#home",
-      "rich-text#title",
-      "rich-text#description1",     
-      "rich-text#description2",
-      "rich-text#description3"
-    ]
+    "children": ["flex-layout.row#homeContainer"]
   },
 
-  "flex-layout.row#home": {
+  "flex-layout.row#homeContainer": {
+    "children": ["flex-layout.col#homeContent"]
+  },
+
+  "flex-layout.col#homeContent": {
     "children": [
-        "image#home"
-       
+      "image#home",
+      "rich-text#title",
+      "rich-text#description1",
+      "rich-text#description2",
+      "rich-text#description3",
+      "lead-form"
     ],
-    "props":{
-      "paddingTop": 7,
-      "blockClass":"layout-home"
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "homeContent"
     }
   },
-  
-
-  "image#home":{
+  "image#home": {
     "props": {
-      "src":"assets/FA18_Classics_DesignAssembly_2.jpg",
+      "src": "assets/FA18_Classics_DesignAssembly_2.jpg",
       // "src": "assets/Tenis_Vans_Pro_Larry_Edgar.jpg",
-            
+
       "maxHeight": 380,
-      "title":"corebiz - vans",
-      "blockClass":"image-home",
+      "title": "corebiz - vans",
+      "blockClass": "image-home",
       "sizes": {
         //"desktop": "16:9",
         "phone": "16:9"
       }
     }
-    
   },
-  "rich-text#title": { 
-    "props": { 
-      "text": "we are corebiz*",
+  "rich-text#title": {
+    "props": {
+      "text": "We Are Corebiz*",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1",
-      "blockClass":"title-home"
+      "blockClass": "title-home",
+      "textColor": "c-on-action-secondary"
     }
   },
 
-  "rich-text#description1": { 
-    "props": { 
+  "rich-text#description1": {
+    "props": {
       "text": "we are here for whatever you need!",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1",
-      "blockClass":"desc-1"
+      "blockClass": "desc-1",
+      "textColor": "c-on-action-primary"
     }
   },
 
-  "rich-text#description2": { 
-    "props": { 
+  "rich-text#description2": {
+    "props": {
       // "text": "We act on every user’s digital journey. From configuring platforms, implementations and integrations, to delivering an excellent consumer experience.Experience this case example with one of our main customers: \nVans - Hiring Coders 2021 - 15",
       "text": "Experience this case example with one of our main customers: Vans - Hiring Coders 2021 - 15\n*hiring coders 2021 - group 15. [official corebiz Website](https://www.corebiz.ag/pt/)",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-4",
-      "blockClass":"desc-2"
+      "blockClass": "desc-2",
+      "textColor": "c-on-action-primary"
     }
   },
 
-  "rich-text#corebiz4": { 
-    "props": { 
+  "rich-text#corebiz4": {
+    "props": {
       "text": "*Hiring Coders 2021 - Group 15. corebiz official Website:[go](https://www.corebiz.ag/pt/)",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
       "font": "t-heading-6",
-      "blockClass":"desc-3"
+      "blockClass": "desc-3"
     }
   },
 
-  "rich-text#description3": { 
-    "props": { 
+  "rich-text#description3": {
+    "props": {
       "text": "Leave your details with us and we will contact you.",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-6",
-      "blockClass":"desc-3"
+      "blockClass": "desc-3",
+      "textColor": "c-on-action-primary"
     }
   }
-
 }
