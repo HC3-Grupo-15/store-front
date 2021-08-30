@@ -16,3 +16,7 @@
     justify-content: flex-start;
     top: 20%;
 }
+
+.stackContainer--intro-about{
+    background-color: #000000;
+}

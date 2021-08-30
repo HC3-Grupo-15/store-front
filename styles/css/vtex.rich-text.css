@@ -29,13 +29,15 @@
 
 .paragraph--visionText,
 .paragraph--listItemText {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   margin: 0;
 }
 
 .paragraph--visionText {
-  text-align: justify;
+  text-align: left;
+  justify-content: center;
+  width: 390px;
 }
 
 .container--listItemText {
@@ -91,4 +93,13 @@
 
 .link--desc-1{
     color:rgb(19, 19, 19);
+}
+
+.headingLevel1--about-text-intro{
+  font-size: 150px;
+  color: #F1C233;
+}
+
+.headingLevel1--about-text-intro2{
+  font-size: 150px;
 }
