@@ -19,7 +19,8 @@
   padding: 50px 20px;
 }
 
-.flexRow--footerContainer {
+.flexRow--footerContainer,
+.flexCol--homeContent {
   padding: 30px 0;
   background-color: #000;
 }

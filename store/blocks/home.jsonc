@@ -1,15 +1,9 @@
-//home
-
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
       "responsive-layout.desktop#home-desktop",
-      "responsive-layout.mobile#home-mobile",
-      "lead-form"
-    ],
-    "props":{
-      "blockClass":"home-block"
-    }
+      "responsive-layout.mobile#home-mobile"
+    ]
   },
 
   "responsive-layout.desktop#home-desktop":{
@@ -30,32 +24,33 @@
     ]
   },
 
-  "flex-layout.row#home": {
+  "flex-layout.col#homeContent": {
     "children": [
-        "image#home"
-       
+      "image#home",
+      "rich-text#title",
+      "rich-text#description1",
+      "rich-text#description2",
+      "rich-text#description3",
+      "lead-form"
     ],
-    "props":{
-      "paddingTop": 7,
-      "blockClass":"layout-home"
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "homeContent"
     }
   },
-  
-
-  "image#home":{
+  "image#home": {
     "props": {
-      "src":"assets/FA18_Classics_DesignAssembly_2.jpg",
+      "src": "assets/FA18_Classics_DesignAssembly_2.jpg",
       // "src": "assets/Tenis_Vans_Pro_Larry_Edgar.jpg",
-            
+
       "maxHeight": 380,
-      "title":"corebiz - vans",
-      "blockClass":"image-home",
+      "title": "corebiz - vans",
+      "blockClass": "image-home",
       "sizes": {
         //"desktop": "16:9",
         "phone": "16:9"
       }
     }
-    
   },
   "rich-text#title": { 
     "props": { 
@@ -63,7 +58,8 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1",
-      "blockClass":"title-home"
+      "blockClass": "title-home",
+      "textColor": "c-on-action-secondary"
     }
   },
 
@@ -74,18 +70,18 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-4",
-      "blockClass":"desc-2"
+      "blockClass": "desc-2",
+      "textColor": "c-on-action-primary"
     }
   },
 
-  "rich-text#corebiz4": { 
-    "props": { 
+  "rich-text#corebiz4": {
+    "props": {
       "text": "*Hiring Coders 2021 - Group 15. corebiz official Website:[go](https://www.corebiz.ag/pt/)",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
       "font": "t-heading-6",
-      "blockClass":"desc-3"
+      "blockClass": "desc-3"
     }
   }
-
 }
