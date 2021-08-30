@@ -1,13 +1,5 @@
 {
   //pagina de produto, baseado nos tutoriais feito em aula
-  
-  // 28/08/2021 - 12h
-  //Erro ao colocar o "shelf.relatedProducts"
-  //Alterar o "thumbnailsOrientation" para vertical caso não consiga o espaçamento
-  //alterado a posição da descrição da imagem e adicionado a missão CoreBiz no final
-  //alterado ordem de visualização (preço em cima, descrição do produto em baixo)
-  //adicionado o "share" das redes sociais
-  //alterado tamanho das fontes
 
   "store.product": {
     "children": [
@@ -108,7 +100,7 @@
     "props": {
       
       "zoomMode": "in-place-hover",
-      "thumbnailsOrientation":"horizontal",  //imagens ficaram sem espaçamento, ideal é mudar o espacamento ou voltar para vertical
+      "thumbnailsOrientation":"vertical",
       "displayThumbnailsArrows": true,
       
 

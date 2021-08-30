@@ -73,7 +73,8 @@
   "flex-layout.row#about-us2": {
     "children": ["flex-layout.col#about-us-container"],
     "props": {
-      "blockClass": "aboutUsContainer"
+      "blockClass": "aboutUsContainer",
+      "fullWidth": true
     }
   },
 

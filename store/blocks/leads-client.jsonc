@@ -3,7 +3,8 @@
         "blocks": [
             //"flex-layout.row#leads"
              "responsive-layout.desktop#leads-desktop",
-             "responsive-layout.mobile#leads-mobile"       
+             "responsive-layout.mobile#leads-mobile",
+             "leads-list"    
         ]
         
     },

@@ -35,13 +35,17 @@
 }
 
 .paragraph--visionText {
-  text-align: left;
-  justify-content: center;
+  text-align: center;
+  justify-content: flex-start;
   width: 390px;
+  height: 250px;
+  vertical-align: top;
 }
 
 .container--listItemText {
   padding-left: 30%;
+  height: 250px;
+  vertical-align: top;
 }
 
 .paragraph--dataTitle {
