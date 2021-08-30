@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+
 .container {
   width: 100%;
   min-height: 9rem;
@@ -125,6 +127,26 @@
   margin-top: 1rem;
 }
 
+.leadsTable {
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  font-family: 'Roboto', sans-serif;
+}
+.tableTitle {
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 5rem;
+}
+.tableItem {
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  height: 1.8rem;
+  font-size: 1.2rem;
+}
+
 @media (max-width: 720px) {
   .form {
     flex-direction: column;
@@ -136,5 +158,12 @@
   .buttonSubmit {
     width: 100%;
     flex: inherit;
+  }
+  .tableTitle {
+    font-size: 1rem;
+  }
+  .tableItem {
+    font-size: 0.8rem;
+    min-height: 2rem;
   }
 }

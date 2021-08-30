@@ -74,6 +74,10 @@
   border-radius: 15px;
 }
 
+.imageElement--image-leads {
+  clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+}
+
 .container--home {
   background-color: black;
 }

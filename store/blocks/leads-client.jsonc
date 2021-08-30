@@ -19,8 +19,7 @@
     
       "responsive-layout.mobile#leads-mobile": {
         "children": [
-            "flex-layout.row#leads",
-            "rich-text#title1"
+            "flex-layout.row#leads"
         ]
       },
 
@@ -38,10 +37,10 @@
 
       "image#leads":{
         "props": {
-          "src":"assets/FA18_Classics_DesignAssembly_2.jpg",               
-          "maxHeight": 500,
+          "src":"assets/vans-shop.jpg",               
+          "maxHeight": 400,
           "title":"corebiz - vans",
-          "blockClass":"image-home",
+          "blockClass":"image-leads",
           "sizes": {
             "phone": "16:9"
           }
@@ -52,7 +51,7 @@
 
       "rich-text#title1":{
         "props": { 
-            "text": "Verify here our leads!",
+            "text": "consulte aqui nossos clientes!",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
             "font": "t-heading-1",
