@@ -55,7 +55,7 @@
   },
   "rich-text#copyright": {
     "props": {
-      "text": "Experience this case example with one of our main customers:\nVans - Hiring Coders 2021 - 15",
+      "text": "Veja este exemplo com um de nossos clientes principais:\n Vans - hiring coders 2021 - grupo 15.",
       "textColor": "c-on-emphasis",
       "textAlign": "CENTER",
       "textPosition": "CENTER",

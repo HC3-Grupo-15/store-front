@@ -33,32 +33,32 @@
   },
   "image#brand1": {
     "props": {
-      "src": "assets/VTEXlogo.png",
+      "src": "assets/VTEX_Logo.png",
       "maxHeight": 80
     }
   },
   "image#brand2": {
     "props": {
-      "src": "assets/gamalogo.png",
-      "maxHeight": 80
+      "src": "assets/gama-academy-logo.png",
+      "maxHeight": 100
     }
   },
   "image#brand3": {
     "props": {
-      "src": "assets/corebizlogo.png",
+      "src": "assets/corebiz.svg",
       "maxHeight": 80
     }
   },
   "image#brand4": {
     "props": {
-      "src": "assets/awslogo.png",
+      "src": "assets/aws-logo.png",
       "maxHeight": 80
     }
   },
   "image#brand5": {
     "props": {
-      "src": "assets/acctlogo.png",
-      "maxHeight": 80
+      "src": "assets/logo-acct-black.svg",
+      "maxHeight": 40
     }
   }
 }

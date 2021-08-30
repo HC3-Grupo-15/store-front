@@ -16,9 +16,8 @@
       "rowGap": 7,
       "marginBottom": 7,
       "paddingTop": 7,
-      "paddingBottom": 7
-
-
+      "paddingBottom": 7,
+      "fullWidth": true
     },
     "children": [
       "flex-layout.col#left",
