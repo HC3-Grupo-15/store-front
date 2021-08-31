@@ -1,0 +1,64 @@
+{
+  "slider-layout#banner-home": {
+    "props": {
+      "blockClass": "banner-home",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "autoplay":{
+          "timeout":3000,
+          "stopOnHover": true
+      }
+    }
+  },
+  "slider-layout#sponsor": {
+    "children": [
+      "image#brand1",
+      "image#brand2",
+      "image#brand3",
+      "image#brand4",
+      "image#brand5"
+    ],
+    "props": {
+      "showPaginationDots": "never",
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "image#brand1": {
+    "props": {
+      "src": "assets/VTEX_Logo.png",
+      "maxHeight": 80
+    }
+  },
+  "image#brand2": {
+    "props": {
+      "src": "assets/gama-academy-logo.png",
+      "maxHeight": 100
+    }
+  },
+  "image#brand3": {
+    "props": {
+      "src": "assets/corebiz.svg",
+      "maxHeight": 80
+    }
+  },
+  "image#brand4": {
+    "props": {
+      "src": "assets/aws-logo.png",
+      "maxHeight": 80
+    }
+  },
+  "image#brand5": {
+    "props": {
+      "src": "assets/logo-acct-black.svg",
+      "maxHeight": 40
+    }
+  }
+}

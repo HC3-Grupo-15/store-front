@@ -1,0 +1,55 @@
+.flexCol--whoWeAreContainer {
+  background-image: url("https://fcc-assets.s3.sa-east-1.amazonaws.com/about-bg-top.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding: 65px 20px;
+  height: 750px;
+}
+
+.flexRow--resumeContainer {
+  padding: 50px 20px;
+}
+
+.flexCol--contactsContainer {
+  background-image: url("https://fcc-assets.s3.sa-east-1.amazonaws.com/about-bg-bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 20px;
+}
+
+.flexRow--footerContainer,
+.flexCol--homeContent {
+  padding: 30px 0;
+  background-color: #000;
+}
+
+.flexCol--socialsContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCol--copyrightContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRow--paragraph-container{
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width:80%
+}
+
+@media (max-width: 720px) {
+  .flexCol--whoWeAreContainer {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 450px) {
+  .flexCol--whoWeAreContainer {
+    height: 1200px;
+  }
+}

@@ -1,15 +1,146 @@
+//home
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "responsive-layout.desktop#home-desktop",
+      "responsive-layout.mobile#home-mobile"
+    ],
+    "props":{
+      "blockClass":"home-block"
+    }
+  },
+  "responsive-layout.desktop#home-desktop":{
+    "children":[
+      "flex-layout.row#home",
+      "rich-text#title", 
+      "rich-text#subtitle-home",
+      "list-context.product-list#shelf-home",
+      "lead-form",
+      "rich-text#description1",
+      "slider-layout#sponsor"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
+  "responsive-layout.mobile#home-mobile": {
+    "children": [
+      "flex-layout.row#home", 
+      "rich-text#title",
+      "rich-text#subtitle-home",
+      "list-context.product-list#shelf-home",
+      "lead-form",
+      "rich-text#description1",
+      "slider-layout#sponsor"
+    ]
+  },
+  "flex-layout.row#home": {
+    "children": [
+        //"image#home",
+        "flex-layout.col#main-home"
+    ],
+    "props":{
+      "paddingTop": 7,
+      "blockClass":"layout-home",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#main-home":{
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "main-home",
+      "width":"80%"
+    },
+    "children": [
+      "list-context.image-list#demo"
+    ]
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#banner-home"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "assets/card-image-example.png",
+          "description": "tenis vans azul"
+        },
+        {
+          "image": "assets/Tenis_Vans_Pro_Larry_Edgar.png",
+          "description": "tenis vans amarelo e preto"
+        }
+      ]
+    }
+  },
+  "image#home":{
+    "props": {
+      "src":"assets/FA18_Classics_DesignAssembly_2.jpg",
+      "maxHeight": 380,
+      "title":"corebiz - vans",
+      "blockClass":"image-home",
+      "sizes": {
+        //"desktop": "16:9",
+        "phone": "16:9"
+      }
+    }
+    
+  },
+  "rich-text#title": { 
+    "props": { "text": "somos a corebiz.",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "font": "t-heading-1",
+      "blockClass":"title-home"
     }
+  },
+  "rich-text#subtitle-home": { 
+    "props": { 
+      "text": "o tênis que você procura a gente têm.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "blockClass":"subtitle-home"
+    }
+  },
+  "rich-text#description1": {  
+    "props": { 
+      // "text": "We act on every user’s digital journey. From configuring platforms, implementations and integrations, to delivering an excellent consumer experience.Experience this case example with one of our main customers: \nVans - Hiring Coders 2021 - 15",
+      // "text": "Experience this case example with one of our main customers: Vans - Hiring Coders 2021 - 15\n*hiring coders 2021 - group 15. [official corebiz Website](https://www.corebiz.ag/pt/)",
+      "text": "Veja este exemplo com um de nossos clientes principais: Vans - hiring coders 2021 - grupo 15.\n[website oficial da corebiz.](https://www.corebiz.ag/pt/)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-4",
+      "blockClass":"desc-2"
+    }
+  },
+  "rich-text#corebiz4": { 
+    "props": { 
+      "text": "*Hiring Coders 2021 - Grupo 15. corebiz. official Website:[go](https://www.corebiz.ag/pt/)",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-6",
+      "blockClass":"desc-3"
+    }
+  },
+  "list-context.product-list#shelf-home": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
+  },
+  "product-summary.shelf": {
+    "children": [
+      "modal-trigger#quickview",
+      "product-summary-name",
+      "product-selling-price"
+    ]
+  },
+  "modal-trigger#quickview": {
+    "children": ["product-summary-image", "modal-layout#quickview"]
+  },
+  "modal-layout#quickview": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "product-summary-sku-selector",
+      "product-summary-quantity",
+      "add-to-cart-button"
+    ]
   }
 }

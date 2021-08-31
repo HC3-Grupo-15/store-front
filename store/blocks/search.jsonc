@@ -1,4 +1,4 @@
-{
+{ //pagina de busca, baseado nos tutoriais feito em aula
   "store.search": {
     "blocks": [
       "search-result-layout" 
@@ -24,9 +24,12 @@
       "pagination": "showMore"
     }
   },
+  // marginBotton: 10 para não ter problemas de sobreposição com o footer
   "flex-layout.row#main_search": {
     "props": {
-      "marginTop": 6
+      "marginTop": 6,
+      "marginBottom": 10,
+      "fullWidth": true
     },
     "children": [
       "flex-layout.col#left_search",
@@ -35,7 +38,9 @@
   },
   "flex-layout.col#left_search": {
     "props": {
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "marginLeft": 2,
+      "paddingLeft": 4
     },
     "children":[
       "filter-navigator.v3"
@@ -43,6 +48,8 @@
   },
   "flex-layout.col#right_search": {
     "props": {
+      "marginLeft":6,
+      "marginRight":6,
       "preventVerticalStretch": true,
       "width":"80%"
     },
@@ -51,9 +58,17 @@
     ]
   },
   "flex-layout.row#total-order":{
+    "props": {
+      "fullWidth": true
+    },
     "children": [
       "total-products.v2",
       "order-by.v2"
+    ]
+  },
+  "search-result-layout.mobile":{
+    "children": [
+      "flex-layout.row#main_search"
     ]
   }
 }

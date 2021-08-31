@@ -1,13 +1,23 @@
 {
+  //pagina de produto, baseado nos tutoriais feito em aula
+
   "store.product": {
     "children": [
       "breadcrumb",
-      "flex-layout.row#main"
+      "flex-layout.row#main",
+      "flex-layout.row#desc"
+      //"shelf.relatedProducts"
     ]
   },
   "flex-layout.row#main": {
     "props": {
-      "marginTop": 6
+      "marginTop": 3,
+      "colGap": 7,
+      "rowGap": 7,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "fullWidth": true
     },
     "children": [
       "flex-layout.col#left",
@@ -15,34 +25,121 @@
     ]
   },
   "flex-layout.col#left": {
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    },
     "children": [
-      "product-images"
+      "product-images",
+      "product-description"
     ]
   },
   "flex-layout.col#right": {
     "props": {
+      "marginLeft":6,
       "preventVerticalStretch": true,
       "verticalAlign": "middle"
     },
     "children": [
-      "product-name",
-      "product-identifier.product",
       "product-price",
-      "flex-layout.row#qty-sku",
+      "vtex.store-components:product-name",
+      "product-rating-summary",
+      "product-separator",
+      "product-quantity",
+      "product-identifier.product",
+      "sku-selector",
+      "flex-layout.row#buy-button",
+      "availability-subscriber",
       "shipping-simulator",
-      "buy-button"
+      "share#default"
     ]
   },
   "product-price": {
     "props": {
       "showSavings": true,
       "showListPrice": true
+      
+      
     }
   },
-  "flex-layout.row#qty-sku": {
+
+  // "shipping-simulator":{
+  //   "props":{
+  //     "marginTop":6,
+  //     "marginBottom":3
+  //   }
+  // },
+
+  // "flex-layout.row#qty-sku": {
+  //   "children": [
+  //     "sku-selector",
+  //     "product-quantity"
+  //   ]
+  // },
+
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": ["buy-button"]
+  },
+  
+  "flex-layout.row#desc":{
+    "props": {
+      "marginTop": 1,
+      "marginBottom": 3
+    },
     "children": [
-      "sku-selector",
-      "product-quantity"
+      "rich-text#missionProductPage" //"product-description"
     ]
+  },
+  
+  "product-images": {
+    "props": {
+      
+      "zoomMode": "in-place-hover",
+      "thumbnailsOrientation":"vertical",
+      "displayThumbnailsArrows": true,
+      
+
+      "aspectRatio": {
+        "desktop": "16:9",
+        "phone": "16:9"
+      }
+    }
+  },
+
+  "share#default":{
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": true,
+        "Pinterest": false
+      }
+    }
+  },
+
+  "rich-text#missionProductPage":{
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "### Corebiz Mission \n ### To be the largest company of experience, technology and marketing for commerce in Latin America.",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-1",
+      "blockClass": "mission"
+    }
   }
+
+//   "shelf.relatedProducts": {
+//     "props": {
+//         "recommendation": "view",
+//         "productList": {
+//             "titleText": "Who saw also saw",
+//             "itemsPerPage": 3
+//         }
+//     }
+// }
+
 }

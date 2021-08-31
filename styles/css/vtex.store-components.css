@@ -1,30 +1,87 @@
-.logoImage{
-    padding-bottom: 10px;
+.logoContainer {
+  box-sizing: border-box;
+  padding: 0;
 }
 
-.buyButtonText{
-    color: white;
+.container {
+  margin: 0;
+  padding: 0;
 }
 
-.searchBarContainer :global(.vtex-input-prefix__group){
-    border: none;
-    border-radius: 0px;
-    border-bottom: 2px solid #DCDCDC;
-    width: 20rem;
+.logoImage {
+  padding-bottom: 10px;
 }
 
-.searchBarContainer :global(.vtex-styleguide-9-x-input){
-    color: #DCDCDC;
-    background-color: #000000;
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #dcdcdc;
+  width: 15rem;
 }
 
-.searchBarIcon{
-    color: #DCDCDC;
-    border-radius: 0px;
+.buyButtonText {
+  color: white;
 }
 
-.searchBarContainer :global(.vtex-input__suffix){
-    border: none;
-    border-radius: 0px;
-    background-color: #000000;
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #dcdcdc;
+  width: 20rem;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  border: none;
+  border-radius: 0px;
+  background-color: #000000;
+  max-width: 24rem;
+}
+
+.autoCompleteOuterContainer {
+  width: min-content;
+}
+
+.sellingPrice {
+  font-size: 1.25rem;
+  color: grey;
+  /* background-color:green; */
+}
+
+.productNameContainer {
+  /* font: "t-heading-1"; */
+  font-size: 2.5rem;
+  color: rgb(32, 32, 32);
+
+  /* background-color:crimson; */
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  color: #dcdcdc;
+  background-color: #000000;
+}
+
+.searchBarIcon {
+  color: #dcdcdc;
+  border-radius: 0px;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  border: none;
+  border-radius: 0px;
+  background-color: #000000;
+}
+
+.imageElement--image-home {
+  border-radius: 15px;
+}
+
+.imageElement--image-leads {
+  clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+}
+
+.container--home {
+  background-color: black;
+}
+
+.imageElementLink--socials {
+  max-width: fit-content;
 }

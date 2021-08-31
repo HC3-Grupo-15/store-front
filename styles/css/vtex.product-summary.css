@@ -1,3 +1,25 @@
-.buyButtonText{
-    color: white;
+.buyButtonText {
+  color: white;
+}
+
+.imageNormal {
+  width: auto;
+  height: 15rem;
+}
+
+.productBrand {
+  font-size: 1.5rem;
+  /* color:gray; */
+}
+
+.element--productCard {
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.gallery {
+  max-width: 100vw;
 }
