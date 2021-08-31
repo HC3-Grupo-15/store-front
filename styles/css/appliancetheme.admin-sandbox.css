@@ -128,16 +128,20 @@
 }
 
 .leadsTable {
-  width: 70%;
+  min-width: 76%;
   align-items: center;
   justify-content: center;
   margin: 1rem auto;
   font-family: 'Roboto', sans-serif;
+  border: none;
+  border-spacing: 0;
 }
+
 .tableTitle {
   font-weight: bold;
   font-size: 1.5rem;
-  height: 5rem;
+  height: 4rem;
+  background-color: rgb(199, 199, 199);
 }
 .tableItem {
   justify-content: center;
@@ -145,6 +149,10 @@
   vertical-align: middle;
   height: 1.8rem;
   font-size: 1.2rem;
+}
+.tableRow:nth-child(even) {
+  border-radius: 10px;
+  background-color: rgb(199, 199, 199);
 }
 
 @media (max-width: 720px) {

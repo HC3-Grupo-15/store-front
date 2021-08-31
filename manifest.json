@@ -12,7 +12,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "hiringcoders202115.form-leads": "0.x",
+    "appliancetheme.admin-sandbox": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
