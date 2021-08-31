@@ -56,13 +56,12 @@
 ## :open_file_folder: Obtendo o projeto
 
 ```bash
-# Clone o repositório store-front
+# Clone os repositórios
 git clone https://github.com/HC3-Grupo-15/store-front.git
+git clone https://github.com/HC3-Grupo-15/api-vtex.git
+git clone https://github.com/HC3-Grupo-15/form-leads-component.git
 
-# Acesse a pasta do projeto
-cd store-front
-
-# Executar o link na vtex
+# Execute o comando abaixo em cada pasta que foi clonada
 vtex link
 ```
 
